@@ -6,5 +6,7 @@
   color: #333333;
 }
 .question {
-  width: 50%;
+  width: 90%;
+  background-color: #00e6e6;
+  border-radius: 10px;
 }

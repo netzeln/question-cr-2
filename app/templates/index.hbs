@@ -1,5 +1,16 @@
-{{question-form saveAsk="saveQuestion" }}
+<div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h2>Ask the Internet:</h2>
+        {{question-form saveAsk="saveQuestion" }}
+      </div>
+      <div class="col-md-7">
+        <h2>Answer the Internet</h2>
+        <h4>Google for Someone</h4>
+        {{#each model.questions as |question|}}
+          {{question-tile question=question}}
+        {{/each}}
+      </div>
 
-{{#each model.questions as |question|}}
-  {{question-tile question=question}}
-{{/each}}
+    </div>
+</div>

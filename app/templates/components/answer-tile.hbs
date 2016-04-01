@@ -4,8 +4,8 @@
     <h1 class="panel-title">{{answer.author}} says:</h1>
   </div>
   <div class="panel-body">
-    <p>{{answer.answer}}</p>
-    <p><a href={{answer.whereGoogleSentMe}}>Source Citations</a> make it true.</p>
+    <p>{{answer.answer}}<br><a href={{answer.whereGoogleSentMe}}>Source Citations</a> make it true.</p>
+
   </div>
   <div class="panel-footer">
     <p>answered on {{answer.date}}. No good?: <button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>

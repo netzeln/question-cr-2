@@ -4,7 +4,7 @@
       <div class="container question">
         <h2> The Question at Hand:</h2>
         {{question-display question=model deleteQuestion="deleteQuestion" }}
-        <div class="">
+        <div>
           {{edit-question question=model updateAsk="updateAsk"}}
         </div>
       </div>
@@ -16,7 +16,7 @@
     </div>
     <div class="col-md-7">
       <div class="container answer">
-        <h2>What Ya'll think:</h2>
+        <h2>What Ya'll Think:</h2>
         {{#each model.answers as |answer|}}
         {{answer-tile answer=answer deleteAnswer="deleteAnswer" question=question}}
         {{/each}}

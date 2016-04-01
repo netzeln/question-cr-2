@@ -3,7 +3,9 @@
     <h2 class="panel-title">{{#link-to 'question' question.id}}{{question.theQuestion}}{{/link-to}}</h2>
   </div>
   <div class="panel-body">
-    <h5>asked by {{question.asker}} on {{question.date}}</h5>
-    <p>{{question.inContext}}</p>
+    <p>{{shortText question.inContext}}...{{#link-to 'question' question.id}}See More{{/link-to}}</p>
+  </div>
+  <div class="panel-footer">
+    <p>asked by: {{question.asker}}, on {{question.date}}</p>
   </div>
 </div>

@@ -1,4 +1,7 @@
-<div class="container">
+
+{{#if editQuestion}}
+<div class="container question-edit">
+  <h2>edit the question</h2>
   <form>
     <div class="form-group">
       <label for="theQuestion">What do you Want to know?</label>
@@ -16,3 +19,6 @@
     <button class="btn btn-lg btn-primary" {{action 'update' question}}>Submit Edits</button>
   </form>
 </div>
+{{else}}
+<button class="btn btn-primary btn-lg" {{action 'showUpdate'}}>UPDATE!</button>
+{{/if }}

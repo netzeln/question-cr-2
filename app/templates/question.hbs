@@ -3,12 +3,16 @@
     <div class="col-md-5">
       <div class="container question">
         <h2> The Question at Hand:</h2>
-        {{question-display question=model deleteQuestion="deleteQuestion"}}
+        {{question-display question=model deleteQuestion="deleteQuestion" }}
       </div>
+
+        <div>
+          {{edit-question question=model updateAsk="updateAsk"}}
+        </div>
+
+      <div>
         {{answer-question saveAnswer="saveTheAnswer" question=model}}
-    </div>
-    <div>
-      {{edit-question question=model updateAsk="updateAsk"}}
+      </div>
     </div>
     <div class="col-md-7">
       <div class="container">

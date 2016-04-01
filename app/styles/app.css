@@ -4,6 +4,18 @@
 body{
   background-color: #e6ccb3;
 }
+.jumbotron{
+  text-align: center;
+
+}
+.jumbotron, h1{
+  color: #996643;
+  text-shadow: 15px;
+
+}
+.100box{
+  width: 100%;
+}
 .struck{
   text-decoration: line-through;
   color: #333333;
@@ -11,6 +23,11 @@ body{
 .question {
   width: 100%;
   background-color: #00e6e6;
+  border-radius: 10px;
+}
+.question2 {
+  width: 100%;
+  background-color: #00b3b3;
   border-radius: 10px;
 }
 .footer{

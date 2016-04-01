@@ -22,10 +22,10 @@ export default Ember.Route.extend({
       this.transitionTo('question', params.question);
     },
     deleteAnswer(answer){
-      console.log("qjs:", answer);
+      //still very unclear here how things "know" what eachother are.
       var question = answer.get('question');
-      console.log("qjsq", answer.question);
       answer.destroyRecord().then(function(){
+        //the console will continually tell me that question.save 'is not a function' though it edits the database correctly
         question.save();
       });
       this.transitionTo('question', question);

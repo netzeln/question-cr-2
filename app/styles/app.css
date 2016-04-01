@@ -1,3 +1,7 @@
 .main-bar{
   background-color: #00b3b3;
 }
+.struck{
+  text-decoration: line-through;
+  color: #333333;
+}

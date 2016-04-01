@@ -1,12 +1,19 @@
 <div class="container">
   <div class="row">
-    <div class="container col-md-5">
-      <h2> The Question at Hand:</h2>
-      {{question-display question=model deleteQuestion="deleteQuestion"}}
-      {{answer-question saveAnswer="saveTheAnswer" question=model}}
+    <div class="col-md-5">
+      <!-- <div class="container"> -->
+        <h2> The Question at Hand:</h2>
+        {{question-display question=model deleteQuestion="deleteQuestion"}}
+        {{answer-question saveAnswer="saveTheAnswer" question=model}}
+      <!-- </div> -->
     </div>
-    <div class="container col-md-7">
-      <h2>What Ya'll think:</h2>
+    <div class="col-md-7">
+      <div class="container">
+        <h2>What Ya'll think:</h2>
+        {{#each model.answers as |answer|}}
+        {{answer-tile answer=answer}}
+        {{/each}}
+      </div>
     </div>
   </div>
 

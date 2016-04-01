@@ -1,7 +1,18 @@
-# Question-cr
+#### _The Ref Desk, {2016-03-25}_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By _**Nic Netzel (with special thanks to this week's pair coding partners, Michael, Abby and Aundra)**_
+
+## Description
+
+_Users can enter a question they'd like answered, and allow the masses on the internet to give answers. Users can also give context for their question to help their non-profesional reference workers answer the question.  Other users can submit answers to questions, as well as provide a link to the site where they found the answer (because you know they probably just Googled it, and a URL is what passes for citation these days)_
+
+## Setup/Installation Requirements
+* _See Below_
+
+## Known Bugs
+
+* _Styling could use work_
+* _Some functions of saving files seem to work properly -- the database updates as it should--, but still show errors in the console when run. This could be due to asynchronisity_
 
 ## Prerequisites
 
@@ -13,12 +24,13 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/netzeln/Question-CR.git` this repository
 * change into the new directory
-* `npm install`
-* `bower install`
+* `npm install` will also get Bootstrap and Emberfire
+* `bower install`  
 
 ## Running / Development
 
@@ -51,3 +63,9 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+### License
+
+*MIT Licesnse*
+
+(cc) 2016 **_{Nic Netzel}_**

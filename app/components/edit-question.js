@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    askQuestion(){
+    update(question){
       var params = {
         theQuestion: this.get('theQuestion'),
         asker: this.get('asker'),
@@ -10,7 +10,8 @@ export default Ember.Component.extend({
         inContext: this.get('inContext')
       };
 
-      this.sendAction('saveAsk', params);
+      console.log('first function:', params);
+      this.sendAction('updateAsk', question, params);
     }
   }
 });

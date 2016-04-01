@@ -11,6 +11,16 @@ export default Ember.Route.extend({
     })
     this.transitionTo('index');
   },
+    updateAsk(question, params){
+      console.log('updateAsk function:', question);
+      Object.keys(params).forEach(function(key){
+        if(params[key] !==undefined){
+          question.set(key, params[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('question', question);
+    },
     saveTheAnswer(params){
       var newAnswer = this.store.createRecord('answer', params);
       console.log("the q:", params.question);

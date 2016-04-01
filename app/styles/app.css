@@ -3,6 +3,7 @@
 }
 body{
   background-color: #e6ccb3;
+  padding-bottom: 70px;
 }
 .jumbotron{
   text-align: center;
@@ -18,7 +19,7 @@ body{
 }
 .struck{
   text-decoration: line-through;
-  color: #333333;
+  color: #666666;
 }
 .question {
   width: 100%;
@@ -30,9 +31,9 @@ body{
   background-color: #00b3b3;
   border-radius: 10px;
 }
-.footer{
+.navbar{
   margin-top: 70px;
-  padding-top: 70px;
+
 }
 .answer{
   width: 100%;

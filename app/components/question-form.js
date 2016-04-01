@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       var params = {
         theQuestion: this.get('theQuestion'),
         asker: this.get('asker'),
-        date: this.get('date'),
+        date: Date(),
         inContext: this.get('inContext')
       };
       console.log(params);

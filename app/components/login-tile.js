@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   actions: {
     loginUser(name){
       this.get('userName').loginName(name);
+          //  this.transitionTo('index');
     }
   }
 });

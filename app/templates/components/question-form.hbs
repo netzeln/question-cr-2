@@ -2,18 +2,18 @@
   <form>
     <div> <h1>{{userName.theName.[0]}} </h1></div>
     <div class="form-group">
-      <label for="theQuestion">What do you Want to know?</label>
+      <label for="theQuestion">What do you Want to know, {{userName.theName.[0]}}?</label>
       {{input class="form-control" type="text" value=theQuestion id="theQuestion"}}
     </div>
     <div class="form-group">
       <label  for="asker">Who Are You?</label>
-      {{input class="form-control" type="text" value=asker id="asker"}}
+      {{input class="form-control" type="text" value=userName.theName.[0] id="asker"}}
     </div>
 
     <div class="form-group">
       <label for="inContext">Why are you Asking?</label>
       {{textarea rows="12" class="form-control" value=inContext id="inContext"}}
     </div>
-    <button class="btn btn-lg btn-info" {{action 'askQuestion' question}}>ASK THE INTERNET</button>
+    <button class="btn btn-lg btn-info" {{action 'askQuestion' question }}>ASK THE INTERNET</button>
   </form>
 </div>

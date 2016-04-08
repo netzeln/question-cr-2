@@ -6,6 +6,7 @@ export default DS.Model.extend({
   date: DS.attr(),
   whereGoogleSentMe: DS.attr(),
   question: DS.belongsTo('question', {async: true}),
-  rating: DS.attr()
+  like: DS.attr(),
+  dislike: DS.attr()
 
 });

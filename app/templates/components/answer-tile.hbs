@@ -2,7 +2,7 @@
 <div class="panel panel-info">
   <div class="panel-heading">
     <h1 class="panel-title">{{answer.author}} says:</h1>
-    <h2>{{answer.rating}}</h2>
+    <h2>{{rating}}  <button {{action 'likeAnswer' answer}} class="btn btn-xs btn-primary">like ({{answer.like}})</button><button {{action 'dislikeAnswer' answer}} class="btn btn-xs btn-danger">dislike ({{answer.dislike}})</button></h2>
   </div>
   <div class="panel-body">
     <p>{{answer.answer}}<br><a href={{answer.whereGoogleSentMe}}>Source Citations</a> make it true.</p>

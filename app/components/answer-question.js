@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       // console.log("question:", this.question);
       var params = {
         answer: this.get('answer'),
-        author: this.get('author'),
+        author: this.get('userName.theName'),
         date: Date(),
         whereGoogleSentMe: this.get('whereGoogleSentMe'),
         question: this.question,

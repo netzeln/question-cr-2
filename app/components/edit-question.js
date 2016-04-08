@@ -1,12 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  userName: Ember.inject.service('user-name'),
   editQuestion: false,
   actions: {
     update(question, editQuestion){
       var params = {
         theQuestion: this.get('theQuestion'),
-        asker: this.get('asker'),
+        asker: this.get('userName.theName'),
         date: Date(),
         inContext: this.get('inContext')
       };

@@ -3,10 +3,11 @@
 }
 body{
   background-color: #e6ccb3;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 }
 .jumbotron{
   text-align: center;
+  height: 250px;
 
 }
 .jumbotron, h1{
@@ -36,10 +37,10 @@ body{
   background-color: #00b3b3;
   border-radius: 10px;
 }
-.navbar{
+/*.navbar{
   margin-top: 70px;
 
-}
+}*/
 .answer{
   width: 100%;
   background-color: #996433;

@@ -9,7 +9,8 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: Date(),
         whereGoogleSentMe: this.get('whereGoogleSentMe'),
-        question: this.question
+        question: this.question,
+        rating: 0
       };
       // console.log("qid", this.question._internalModel._data);
       // console.log(params);

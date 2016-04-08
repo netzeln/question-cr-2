@@ -2,12 +2,14 @@
 <div class="panel panel-info">
   <div class="panel-heading">
     <h1 class="panel-title">{{answer.author}} says:</h1>
+    <h2>{{answer.rating}}</h2>
   </div>
   <div class="panel-body">
     <p>{{answer.answer}}<br><a href={{answer.whereGoogleSentMe}}>Source Citations</a> make it true.</p>
 
   </div>
   <div class="panel-footer">
-    <p>answered on {{answer.date}}. No good?: <button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>
+    <p>answered on {{answer.date}}<br>
+      Need Updating?<button {{action 'updateAnswer' answer}}>Update</button> No good?: <button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>
   </div>
 </div>

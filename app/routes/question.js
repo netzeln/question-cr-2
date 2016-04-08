@@ -51,13 +51,11 @@ export default Ember.Route.extend({
     },
     likeAnswer(answer){
      var liked = answer.get('like');
-     console.log(liked);
      answer.set('like', liked + 1);
      answer.save();
    },
    dislikeAnswer(answer){
     var disliked = answer.get('dislike');
-    console.log(disliked);
     answer.set('dislike', disliked + 1);
     answer.save();
    }

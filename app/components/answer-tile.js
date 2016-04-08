@@ -5,6 +5,9 @@ editAnswer: false,
 rating: Ember.computed('answer.like', 'answer.dislike', function(){
   return this.get('answer.like') - this.get('answer.dislike');
 }),
+hotness: Ember.computed('answer.like', "answer.dislike", function(){
+  return this.get('answer.like') + this.get('answer.dislike');
+}),
   actions:{
     deleteAnswer(answer){
       if(confirm('is this answer REALLY worth deletion?')){

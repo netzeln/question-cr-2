@@ -7,7 +7,7 @@
         <h2 class="panel-title">{{answer.author}} says:</h2>
       </div>
       <div class="col-xs-6">
-        <h3>Rating: {{hot-cold rating}}</h3>  <button {{action 'likeAnswer' answer}} class="btn btn-xs btn-primary">like ({{answer.like}})</button><button {{action 'dislikeAnswer' answer}} class="btn btn-xs btn-danger">dislike ({{answer.dislike}})</button>
+        <h3>Rating: {{hot-cold rating hotness}}</h3>  <button {{action 'likeAnswer' answer}} class="btn btn-xs btn-primary">like ({{answer.like}})</button><button {{action 'dislikeAnswer' answer}} class="btn btn-xs btn-danger">dislike ({{answer.dislike}})</button>
       </div>
     </div>
   </div>

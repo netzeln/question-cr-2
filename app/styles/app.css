@@ -15,6 +15,14 @@ body{
   text-shadow: 15px;
 
 }
+.hot {
+  color: red;
+  font-style: italic;
+}
+.cold{
+  color: blue;
+  font-style: oblique;
+}
 .100box{
   width: 100%;
 }

@@ -3,24 +3,21 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   editAnswer: false,
   actions: {
-    update(answer, editAnswer){
+    updateAnswer(answer, editAnswer){
       var params = {
-        theQuestion: this.get('theQuestion'),
-        asker: this.get('asker'),
+        answer: this.get('newAnswer'),
+        author: this.get('author'),
         date: Date(),
-        inContext: this.get('inContext')
+        whereGoogleSentMe: this.get('whereGoogleSentMe'),
+        question: this.question,
       };
-      
-      this.set('editAnswer', false);
-      this.sendAction('updateAsk', answer, params);
-    },
-    showUpdate(editAnswer){
 
-      if(this.editAnswer){
-        this.set('editAnswer', false);
-      }else{
-        this.set('editAnswer', true);
-      }
+      this.set('editAnswer', false);
+      this.sendAction('updateAnswer', answer, params);
+    },
+    showUpdate(){
+
+    this.sendAction('showUpdate', answer);
     }
   }
 });

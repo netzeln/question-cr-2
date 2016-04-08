@@ -10,6 +10,7 @@
   </div>
   <div class="panel-footer">
     <p>answered on {{answer.date}}<br>
-      Need Updating?<button {{action 'updateAnswer' answer}}>Update</button> No good?: <button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>
+      Need Updating?{{edit-answer answer=answer editAnswer=editAnswer updateAnswer="updateAnswer" showUpdate="showUpdate"}} No good?: <button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>
+
   </div>
 </div>

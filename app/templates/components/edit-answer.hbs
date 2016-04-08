@@ -1,1 +1,22 @@
-{{yield}}
+{{#if editAnswer}}
+<div class="container answer">
+  <form >
+    <div class="form-group">
+      <label for="answerIt">AFAIK The Answer REALLY Is:</label>
+      {{textarea rows="12" class="form-control" type="text" value=newAnswer id="answerIt" placeholder="new answer here"}}
+    </div>
+    <div class="form-group">
+      <label  for="author">In the Still Expert Opinion Of:</label>
+      {{input class="form-control" type="text" value=author id="newAuthor" placeholder=answer.author}}
+    </div>
+
+    <div class="form-group">
+      <label for="whereGoogleSentMe">Where'd your second Googling take you?(link)</label>
+      {{input type="url" rows="12" class="form-control" value=whereGoogleSentMe id="newWhereGoogleSentMe" placeholder=answer.whereGoogleSentMe}}
+    </div>
+    <button class="btn btn-lg btn-info" {{action 'updateAnswer' answer}}>Edit Your Knowledge</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'showUpdate' answer}}>Update</button>
+{{/if}}

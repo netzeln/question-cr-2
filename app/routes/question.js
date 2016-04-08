@@ -12,7 +12,7 @@ export default Ember.Route.extend({
     this.transitionTo('index');
   },
     updateAsk(question, params){
-      console.log('updateAsk function:', question);
+
       Object.keys(params).forEach(function(key){
         if(params[key] !==undefined){
           question.set(key, params[key]);
@@ -39,6 +39,15 @@ export default Ember.Route.extend({
         question.save();
       });
       this.transitionTo('question', question);
+    },
+    updateAnswer(answer, params){
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined){
+          answer.set(key, params[key]);
+        }
+      });
+      answer.save();
+      //this.transitionTo?????
     }
   }
 });

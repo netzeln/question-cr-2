@@ -18,7 +18,7 @@
       <div class="container answer">
         <h2>What Ya'll Think:</h2>
         {{#each model.answers as |answer|}}
-        {{answer-tile answer=answer deleteAnswer="deleteAnswer" question=question}}
+        {{answer-tile answer=answer deleteAnswer="deleteAnswer"  updateAnswer="updateAnswer" question=question}}
         {{/each}}
       </div>
     </div>

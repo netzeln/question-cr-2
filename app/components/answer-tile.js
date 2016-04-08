@@ -22,6 +22,13 @@ rating: Ember.computed('answer.like', 'answer.dislike', function(){
       }else{
         this.set('editAnswer', true);
       }
+    },
+    likeAnswer(answer){
+      this.sendAction('likeAnswer', answer);
+    },
+    dislikeAnswer(answer){
+      this.sendAction('dislikeAnswer', answer);
     }
+
   }
 });

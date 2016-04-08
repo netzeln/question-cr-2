@@ -1,0 +1,16 @@
+<div class="container">
+  <h3> This is the internet, so you probably want to be Anonymous, but....<br>
+    This is the internet, so you probably also want to have some super clever handle, but...<br>
+    This is the internet, so, if you're smart, you don't want the NSA tracking you.</h3>
+
+    <h3> We got you covered. </h3>
+
+    <h3> You can have a clever handle, if you want, while you are on the site, but we won't store it anywhere, OR you can just stay :  <h1>{{userName.theName.[0]}} </h1></h3>
+  <form>
+    <div class="form-group">
+      <label for="user"></label>
+      {{input value=user type="text" id="user"}}
+    </div>
+    <button {{action 'loginUser' user}}>Set Name</button>
+  </form>
+</div>

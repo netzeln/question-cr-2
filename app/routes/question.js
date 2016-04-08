@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  userName: Ember.inject.service(),
+  
   actions:{
     deleteQuestion(question){
       var answer_deletions = question.get('answers').map(function(answer){

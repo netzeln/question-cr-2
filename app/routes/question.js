@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
+
   userName: Ember.inject.service(),
-  
+
+
   actions:{
     deleteQuestion(question){
       var answer_deletions = question.get('answers').map(function(answer){
@@ -49,7 +52,7 @@ export default Ember.Route.extend({
         }
       });
       answer.save();
-      //this.transitionTo?????
+      
     },
     likeAnswer(answer){
      var liked = answer.get('like');

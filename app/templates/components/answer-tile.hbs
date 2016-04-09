@@ -1,23 +1,25 @@
 
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <div class="row">
-      <div class=col-xs-6>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <div class="row">
+        <div class=col-xs-6>
 
-        <h2 class="panel-title"><strong>{{answer.author}}</strong><em> says</em>:</h2>
-      </div>
-      <div class="col-xs-6">
-        <h3>Rating: {{hot-cold rating hotness}}</h3>  <button {{action 'likeAnswer' answer}} class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-upload"> </span> like ({{answer.like}})</button><button {{action 'dislikeAnswer' answer}} class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-download"> </span> dislike ({{answer.dislike}})</button>
+          <h2 class="panel-title"><strong>{{answer.author}}</strong><em> says</em>:</h2>
+        </div>
+        <div class="col-xs-6">
+          <h3>Rating: {{hot-cold rating hotness}}</h3>
+          <button {{action 'likeAnswer' answer}} class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-upload"> </span> like ({{answer.like}})</button>
+          <button {{action 'dislikeAnswer' answer}} class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-download"> </span> dislike ({{answer.dislike}})</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="panel-body">
-    <p>{{answer.answer}}<br><a href={{answer.whereGoogleSentMe}}>Source Citations</a> make it true.</p>
+    <div class="panel-body">
+      <p>{{answer.answer}}<br><a href={{answer.whereGoogleSentMe}}>Source Citations</a> make it true.</p>
 
-  </div>
-  <div class="panel-footer">
-    <p>answered on {{answer.date}}<br>
-      {{edit-answer answer=answer editAnswer=editAnswer updateAnswer="updateAnswer" showUpdate="showUpdate"}}<button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>
+    </div>
+    <div class="panel-footer">
+      <p>answered on {{answer.date}}<br>
+        {{edit-answer answer=answer editAnswer=editAnswer updateAnswer="updateAnswer" showUpdate="showUpdate"}}<button {{action 'deleteAnswer' answer}} class="btn btn-warning btn-xs">Delete Answer</button></p>
 
+    </div>
   </div>
-</div>

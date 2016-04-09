@@ -1,6 +1,6 @@
-#### _The Ref Desk, {2016-03-25}_
+#### _The Ref Desk 2.0, {2016-04-08}_
 
-#### By _**Nic Netzel (with special thanks to this week's pair coding partners, Michael, Abby and Aundra)**_
+#### By _**Nic Netzel (with special thanks to this week's pair coding partners, Jared, Yvonna and others)**_
 
 ## Description
 
@@ -12,7 +12,7 @@ _Users can enter a question they'd like answered, and allow the masses on the in
 ## Known Bugs
 
 * _Styling could use work_
-* _Some functions of saving files seem to work properly -- the database updates as it should--, but still show errors in the console when run. This could be due to asynchronisity_
+* _Could not get Sort AND rating computed properties to work together_
 
 ## Prerequisites
 
